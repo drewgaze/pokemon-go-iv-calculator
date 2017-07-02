@@ -82,7 +82,6 @@ function determinePossibleIVs (pokemon, cp, hp, dust, neverUpgraded) {
 				});
 			}
 		}
-
 	}
 
 	var hpIVIndex;
