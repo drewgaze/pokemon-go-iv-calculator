@@ -126,6 +126,6 @@ function possibleIVs (pokemonQuery, cp, hp, dust, neverUpgraded) {
 
 module.exports = {
 	evaluate,
-	possibleIVs
+	possibleIVs,
+	pokemon: pokedex.pokemon
 };
-
