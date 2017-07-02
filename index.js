@@ -32,7 +32,7 @@ function determinePerfection(ivs) {
 function evaluate (pokemonQuery, cp, hp, dustCost, neverUpgraded) {
 	const pokemon = pokedex.pokemonByName(pokemonQuery) || pokedex.pokemonById(pokemonQuery);
 	if (!pokemon) {
-		return {error : `Could not find pokemon: ${pokemonQuery}`};
+		throw 'Could not find pokemon ' + pokemonQuery;
 	}
 	var potentialIVs = determinePossibleIVs(pokemon, cp, hp, dustCost, neverUpgraded);
 
